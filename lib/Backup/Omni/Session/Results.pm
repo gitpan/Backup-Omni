@@ -174,10 +174,16 @@ The size of this session.
 
 =head1 SEE ALSO
 
+ Backup::Omni::Base
  Backup::Omni::Class
  Backup::Omni::Utils
  Backup::Omni::Constants
  Backup::Omni::Exception
+ Backup::Omni::Restore::Filesystem::Single
+ Backup::Omni::Session::Filesystem
+ Backup::Omni::Session::Messages
+ Backup::Omni::Session::Monitor
+ Backup::Omni::Session::Results
 
 =head1 AUTHOR
 

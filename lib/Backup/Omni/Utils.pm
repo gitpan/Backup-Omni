@@ -265,6 +265,10 @@ Backup::Omni::Utils - Utility functions for Backup::Omni
    utils   => 'db2dt dt2db'
  ;
 
+ ... or ...
+
+ use Backup::Omni::Utils 'dt2db';
+
  printf("%s\n", dt2db($dt));
 
 =head1 DESCRIPTION

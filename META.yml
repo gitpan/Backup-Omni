@@ -15,7 +15,7 @@ name: Backup-Omni
 provides:
   Backup::Omni:
     file: lib/Backup/Omni.pm
-    version: 0.01
+    version: 0.02
   Backup::Omni::Base:
     file: lib/Backup/Omni/Base.pm
     version: 0.01
@@ -57,4 +57,4 @@ requires:
   perl: 5.008008
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02

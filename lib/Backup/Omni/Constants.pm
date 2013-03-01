@@ -81,10 +81,7 @@ Backup::Omni::Constants - Defined constants for Backup::Omni
 
 This module defines constants used within the system. Each constant can
 be exported individually or by using ":all". These constants are primarily
-used to export the fully qualified cli commands for HP DataProtector. On a 
-*nix box this usually prefixes the command with '/opt/omni/bin/'. On a 
-Windows box the current path is parsed trying to find a reference to 
-'OmniBack\\bin'. If this is not found an exception is thrown.
+used to export the fully qualified cli commands for HP DataProtector. 
 
 =head1 EXPORT
 

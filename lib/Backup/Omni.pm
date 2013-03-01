@@ -1,7 +1,7 @@
 package Backup::Omni;
 
 use 5.8.8;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 
@@ -14,9 +14,9 @@ Backup::Omni - A set of modules to interact with HP DataProtector
 =head1 DESCRIPTION
 
 This is a set of modules to help automate some tasks with HP's DataProtector
-product. With these modules it is possible to restore items from the 
-Filesystem object, monitor sessions and retrieve session results from the 
-command line. 
+(OmniBack) product. With these modules it is possible to restore items from 
+the Filesystem object, monitor sessions, retrieve session results and messages
+from the command line. 
 
 There is nothing special about these modules. They are basically wrappers 
 around the cli commands that are provided with DataProtector. Sensiable 

@@ -88,8 +88,8 @@ Backup::Omni::Restore::Filesystem::Single - Restore a single file using a "files
 =head1 SYNOPSIS
 
  use Backup::Omni::Session::Result;
- use Backup::Omni::Session::Convert;
  use Backup::Omni::Session::Monitor;
+ use Backup::Omni::Utils 'convert_id';
  use Backup::Omni::Session::Filesystem;
  use Backup::Omni::Restore::Filesystem::Single;
 
@@ -107,7 +107,7 @@ Backup::Omni::Restore::Filesystem::Single - Restore a single file using a "files
  );
 
  my $temp = $restore->submit;
- my $jobid = Backup::Omni::Session::Convert->convert(-session => $temp);
+ my $jobid = convert_id($temp);
  my $monitor = Backup::Omni::Session::Monitor->new(-session => $jobid);
 
  while ($monitor->running) {
@@ -125,7 +125,7 @@ Backup::Omni::Restore::Filesystem::Single - Restore a single file using a "files
 =head1 DESCRIPTION
 
 This module will restore a single file from a HP DataProtector 
-"filesystem object" using the cli command omnir with the appropiate options. 
+"Filesystem object" using the cli command omnir with the appropiate options. 
 The above is a complete script to restore a single file without any error 
 checking.
 

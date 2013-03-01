@@ -150,7 +150,11 @@ Backup::Omni::Session::Messages - Returns the messages of a given session
      -session => '2013/01/28-1'
  );
 
- printf("status = %s\n", $results->status);
+ while (my $message = $messaages->next) {
+
+     printf("%s\n", $message);
+
+ }
 
 =head1 DESCRIPTION
 
